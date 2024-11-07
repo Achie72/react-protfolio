@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { act } from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('should main exists in dom', async () => {
+  await act(async () => {
+    render(<App />);
+  })
+
+  const mainElement = await screen.findByRole('main')
+  expect(mainElement).toHaveClass('home-page')
 });
+
+
