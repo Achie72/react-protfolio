@@ -23,7 +23,7 @@
     "build": "react-scripts build && npm run move-build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "move-build": "rimraf docs && copyfiles -u 1 build/* docs"
+    "move-build": "rimraf docs && mkdir docs && copyfiles -u 1 build/**/* docs"
   },
   "eslintConfig": {
     "extends": [
