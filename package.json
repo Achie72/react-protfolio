@@ -23,7 +23,8 @@
     "build": "react-scripts build && npm run move-build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "move-build": "rimraf docs && mkdir docs && copyfiles -u 1 build/**/* docs"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +45,15 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.14.0",
     "copyfiles": "^2.4.1",
-    "rimraf": "^6.0.1"
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript-eslint": "^8.13.0"
   }
 }
