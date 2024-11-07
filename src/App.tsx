@@ -2,8 +2,7 @@ import React, {useEffect, useState} from 'react';
 import AboutSection from './components/AboutSection';
 import LinkCard from './components/LinkCard';
 import { 
-  FaGithub, 
-  FaTwitch
+  FaGithub
 } from 'react-icons/fa';
 import {
   SiKofi
@@ -26,9 +25,7 @@ const App: React.FC = () => {
       <AboutSection />
       <div className="link-list">
         <LinkCard title="My Ko-fi page" url="https://ko-fi.com/achiegamedev" description="Devlogs, Reviews and much more" icon={<SiKofi/>}/>
-        <LinkCard title="GitHub" url="https://github.com/your-profile" description="Check out my code projects" icon={<FaGithub/>}/>
-        <LinkCard title="LinkedIn" url="https://linkedin.com/in/your-profile" description="Connect with me" />
-        <LinkCard title="Portfolio" url="https://your-portfolio.com" description="See my latest work" />
+        <LinkCard title="GitHub" url="https://github.com/Achie72" description="Check out my code projects" icon={<FaGithub/>}/>
       </div>
       <p></p>
       <div className="gamecard-list">
