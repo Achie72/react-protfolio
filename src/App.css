@@ -36,3 +36,113 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home-page {
+  max-width: 600px;
+  width: 100%;
+}
+
+.about-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.link-card {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+  text-align: center;
+  width: fit-content;
+  min-width: 300px;
+}
+
+.link-icon {
+  vertical-align: middle;
+}
+
+.link-card:hover {
+  transform: scale(1.05);
+}
+
+.link-card h3 {
+  margin: 0 0 5px;
+}
+
+.link-card p {
+  margin: 0;
+  color: #555;
+}
+
+.game-card-container {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+  text-align: center;
+  width: fit-content;
+  min-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.game-card-thumbnail-container {
+  flex-shrink: 0;
+  width: 300px;
+  height: auto;
+}
+
+.game-card-thumbnail-container img {
+  width: 100%; /* Make image take full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+/* Text container */
+.game-card-text-container {
+  flex: 1; /* Take remaining space */
+  display: flex;
+  flex-direction: column; /* Stack text items vertically */
+  align-items: flex-start;
+  gap: 10px; /* Space between text items */
+  margin-left: 10px;
+}
+
+.game-card-text-container p {
+  margin: 0; /* Remove default margins */
+  line-height: 1.5; /* Improve readability */
+  align-items: flex-start;
+}
+
+
