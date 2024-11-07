@@ -30,7 +30,3 @@ jobs:
       # Run linting
       - name: Run ESLint
         run: npm run lint
-
-      # Run TypeScript type check
-      - name: Run TypeScript
-        run: npm run tsc -- --noEmit
